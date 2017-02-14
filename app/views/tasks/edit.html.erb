@@ -1,0 +1,8 @@
+<h1>apparently you wish to edit a task edit</h1>
+<p>wich one do you want to edit</p>
+
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :description %>
+  <%= f.submit "sauvegarder", class: "btn btn-primary" %>
+<% end %>
